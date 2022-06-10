@@ -53,7 +53,7 @@ def sol(root):
             
         return minCost
         
-    return dfs(root, 0, [999, "A"])
+    return dfs(root, 0, [999, root.letter])
         
 print(sol(A))
         
