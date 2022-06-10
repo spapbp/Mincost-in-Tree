@@ -1,3 +1,9 @@
+"""
+Return node of minimum cost of leaf node in a Tree
+"""
+
+
+
 class Node:
     def __init__(self, edge_list, letter):
         self.edge_list = edge_list
