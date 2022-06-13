@@ -57,6 +57,13 @@ def sol(root):
         
 print(sol(A))
         
+    
+def helper(root, cost_so_far):
+    if len(root.edge_list) == 0:
+        return (cost_so_far, root)
+    options = [helper(e.target, cost_so_far + e.cost) for e in root.edge_list]
+    return min(options)
+
         
         
         
